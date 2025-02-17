@@ -9,8 +9,11 @@ echo "Child"
 elif [ $age -gt 13 ] && [ $age -le 19 ];then
 echo  "Teenager"
 
+elif [ $age -gt 20 ] && [ $age -le 60 ];then
+echo  "Adult"
+
 else
-echo "Adult"
+echo "oldage"
 
 fi
 
