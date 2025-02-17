@@ -6,7 +6,7 @@ read num1
 echo "Enter second number :"
 read num2
 
-echo "Enter the operation (Add,Sub,Multi) :"
+echo "Enter the operation (Add,Sub,Multi,div) :"
 read operation
 
 if [ "$operation" == "add" ];then
@@ -15,6 +15,8 @@ elif [ "$operation" == "sub" ];then
 result=$((num1 - num2))
 elif [ "$operation" == "multi" ];then
 result=$((num1 * num2))
+elif [ "$operation" == "div" ];then
+result=$((num1 / num2))
 else
 echo "Invalid operation"
 fi

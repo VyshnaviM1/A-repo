@@ -5,6 +5,8 @@ read salary
 
 if [ $salary -lt 20000 ];then
 tax=0
+elif [ $salary -eq 20000 ];then
+tax=$((salary * 2 / 100))
 elif [ $salary -le 40000 ];then
 tax=$((salary * 5 / 100))
 else
